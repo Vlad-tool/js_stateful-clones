@@ -7,7 +7,7 @@
  * @return {Object[]}
  */
 function transformStateWithClones(state, actions) {
-  function transformStateWithClones(state, actions) {
+
   const history = [];
   let currentState = { ...state }; // Початковий стан (клонований)
 
@@ -33,6 +33,5 @@ function transformStateWithClones(state, actions) {
   return history;
 }
 
-}
 
 module.exports = transformStateWithClones;
